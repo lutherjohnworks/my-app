@@ -9,6 +9,12 @@ export default [
         icon: "mdi-help-box", 
         to: "/about" 
     },
+    {
+        header: "Forms",
+        title: "Form", 
+        icon: "mdi-book-information-variant", 
+        to: "/form" 
+    },
     { header: "Authentication" },
     {
         group: "/",

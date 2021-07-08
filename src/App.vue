@@ -9,8 +9,8 @@
       </v-list-item>
 
       <v-divider></v-divider>
-
-      <v-list expand nav class="mt-1">
+      <template>
+        <v-list expand nav class="mt-1">
         <v-list-item v-for="item in items" :key="item.title" :to="item.to" link>
           <v-list-item-icon>
             <v-icon>{{ item.icon }}</v-icon>
@@ -19,8 +19,12 @@
           <v-list-item-content>
             <v-list-item-title>{{ item.title }}</v-list-item-title>
           </v-list-item-content>
+
         </v-list-item>
       </v-list>
+      </template>
+
+      
     </v-navigation-drawer>
 
     <v-app-bar app dark color="primary" src="bg-header.jpg" prominent>
@@ -59,7 +63,9 @@ import sidebarItems from "./sidebarItems";
 export default {
   data: () => ({
     drawer: null,
-    items: sidebarItems,
+    items: sidebarItems
+    
   }),
+
 };
 </script>
